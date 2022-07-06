@@ -5,10 +5,8 @@ public class BinarySearchTreeMain
 	public static void main(String[] args) {
 
 		BinarySearchTree binaryTree = new BinarySearchTree();
-		
 		Node node = new Node(56);
 		binaryTree.root = node;
-		
 		binaryTree.insertElement(node, 30);
 		binaryTree.insertElement(node, 70);
 		binaryTree.insertElement(node, 3);
@@ -24,7 +22,8 @@ public class BinarySearchTreeMain
 
 		System.out.println("Display Node");
 		binaryTree.traverseTree(node);
-
+		System.out.println();
+		BinarySearchTree.search(binaryTree.root, 63, null);
 	}
 	
 }
